@@ -5,15 +5,23 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 const About = () => {
-  const text = `Passionate about clean architecture
-    I build scalable, high-performance solutions
-    from prototype to production`;
-  const aboutText = `Obsessed with building fast, intuitive apps—from pixel-perfect React UIs to bulletproof serverless backends. Every line of code is a promise: quality that users feel.
-  When I’m not shipping:
-⚡️ Open-sourcing my latest experiment (or hacking on yours)
-🎥 Teaching devs on Twitch/YouTube—because rising tides lift all ships
-🧗 Rock climbing (problem-solving with real stakes)
-🎸 Strumming chords while CI pipelines pass (multitasking at its finest)`;
+  const text = `Passionate about clean architecture  Building scalable, 
+  performance-focused web applications  
+From concept to implementation`;
+  const aboutText = `I build user-focused web applications that balance clean UI with strong software engineering.💻
+
+• Education — B.Tech in Computer Science & Engineering, VIT Chennai🎓
+
+• Frontend (React.js) — Building responsive, scalable interfaces with modern workflows⚛️
+
+• Code Quality — Writing clean, maintainable, performance-focused code⚡
+
+• Cloud Fundamentals — Experience with cloud-ready application practices☁️
+
+• Projects — Work across machine learning, blockchain🔗, and full-stack development
+
+→ Driven by curiosity and continuous learning, I enjoy solving real-world problems, building reliable software, and continuously sharpening my technical skills🔍.`;
+
   const imgRef = useRef(null);
   useGSAP(() => {
     gsap.to("#about", {
@@ -50,7 +58,7 @@ const About = () => {
       <div className="flex flex-col items-center justify-between gap-16 px-10 pb-16 text-xl font-light tracking-wide lg:flex-row md:text-2xl lg:text-3xl text-white/60">
         <img
           ref={imgRef}
-          src="images/man.jpg"
+          src="images/Profile.jpg"
           alt="man"
           className="w-md rounded-3xl"
         />
