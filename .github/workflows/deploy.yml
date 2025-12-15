@@ -2,11 +2,6 @@ name: Deploy React + Vite To Github Pages
 
 on:
   workflow_dispatch:
-
-  concurrency:
-    group: pages
-    cancel-in-progress: true
-
   push:
     branches:
       - main
